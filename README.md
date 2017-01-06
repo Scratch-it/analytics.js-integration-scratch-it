@@ -1,15 +1,7 @@
-# analytics.js-integration
+# analytics.js-integration-scratch-it
 
-[![CircleCI](https://circleci.com/gh/segmentio/analytics.js-integration.svg?style=shield&circle-token=096975c79692a2267d9a92fd412b6b8bb7e3eb0a)](https://circleci.com/gh/segmentio/analytics.js-integration)
-[![Codecov](https://img.shields.io/codecov/c/github/segmentio/analytics.js-integration/master.svg?maxAge=2592000)](https://codecov.io/gh/segmentio/analytics.js-integration)
-
-The base integration factory used to create custom analytics integrations for [Analytics.js](https://github.com/segmentio/analytics.js).
-
-The factory returns a barebones integration that has no logic, so that we can share common pieces of logic—like queueing before an integration is ready, providing a way to default options, etc—in one place.
-
-## Integrating with Segment
-
-Interested in integrating your service with us? Check out our [Partners page](https://segment.com/partners/) for more details.
+<!-- [![CircleCI](https://circleci.com/gh/segmentio/analytics.js-integration.svg?style=shield&circle-token=096975c79692a2267d9a92fd412b6b8bb7e3eb0a)](https://circleci.com/gh/segmentio/analytics.js-integration)
+[![Codecov](https://img.shields.io/codecov/c/github/segmentio/analytics.js-integration/master.svg?maxAge=2592000)](https://codecov.io/gh/segmentio/analytics.js-integration) -->
 
 ## Example
 
