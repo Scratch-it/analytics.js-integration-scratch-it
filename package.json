@@ -23,6 +23,9 @@
   },
   "homepage": "https://github.com/Scratch-it/analytics.js-integration-scratch-it#readme",
   "dependencies": {
+    "@segment/analytics.js-core": "^3.0.0",
+    "@segment/analytics.js-integration-tester": "^3.0.0",
+    "@segment/clear-env": "^2.0.0",
     "@ndhoule/after": "^1.0.0",
     "@ndhoule/clone": "^1.0.0",
     "@ndhoule/defaults": "^2.0.1",
