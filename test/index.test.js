@@ -1,8 +1,8 @@
-var Analytics = require('analytics.js').constructor;
-var integration = require('analytics.js-integration');
-var sandbox = require('clear-env');
-var tester = require('analytics.js-integration-tester');
-var ScratchIt = require('./');
+var Analytics = require('@segment/analytics.js-core').constructor;
+var integration = require('@segment/analytics.js-integration');
+var sandbox = require('@segment/clear-env');
+var tester = require('@segment/analytics.js-integration-tester');
+var ScratchIt = require('../lib/');
 
 describe('ScratchIt', function() {
   var analytics;
