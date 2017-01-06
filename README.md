@@ -1,7 +1,6 @@
 # analytics.js-integration-scratch-it
 
-<!-- [![CircleCI](https://circleci.com/gh/segmentio/analytics.js-integration.svg?style=shield&circle-token=096975c79692a2267d9a92fd412b6b8bb7e3eb0a)](https://circleci.com/gh/segmentio/analytics.js-integration)
-[![Codecov](https://img.shields.io/codecov/c/github/segmentio/analytics.js-integration/master.svg?maxAge=2592000)](https://codecov.io/gh/segmentio/analytics.js-integration) -->
+[![CircleCI](https://circleci.com/gh/Scratch-it/analytics.js-integration-scratch-it.svg?style=svg)](https://circleci.com/gh/Scratch-it/analytics.js-integration-scratch-it)
 
 ## Example
 
