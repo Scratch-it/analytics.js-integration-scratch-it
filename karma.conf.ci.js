@@ -78,9 +78,11 @@ module.exports = function(config) {
 
     reporters: ['progress', 'junit'],
 
-    browsers: ['PhantomJS'].concat(Object.keys(customLaunchers)),
+    browsers: ['ChromeHeadless'].concat(Object.keys(customLaunchers)),
 
     customLaunchers: customLaunchers,
+
+    plugins: config.plugins.concat(['karma-junit-reporter', 'karma-sauce-launcher']),
 
     junitReporter: {
       outputDir: process.env.TEST_REPORTS_DIR,

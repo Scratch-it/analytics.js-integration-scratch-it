@@ -8,9 +8,28 @@ module.exports = function(config) {
       'test/**/*.test.js'
     ],
 
-    browsers: ['PhantomJS'],
+    browsers: ['ChromeHeadless'],
+
+    // GitHub Actions' ubuntu-24.04 runners block Chrome's user-namespace
+    // sandbox, so CI launches with --no-sandbox (see .github/workflows/ci.yml).
+    customLaunchers: {
+      ChromeHeadlessCI: {
+        base: 'ChromeHeadless',
+        flags: ['--no-sandbox']
+      }
+    },
 
     frameworks: ['browserify', 'mocha'],
+
+    // Listed explicitly so karma doesn't auto-load karma-sauce-launcher, which
+    // only karma.conf.ci.js uses and which fails to load without its install
+    // scripts (CI installs with --ignore-scripts).
+    plugins: [
+      'karma-browserify',
+      'karma-chrome-launcher',
+      'karma-mocha',
+      'karma-spec-reporter'
+    ],
 
     reporters: ['spec'/* , 'coverage' */],
 
