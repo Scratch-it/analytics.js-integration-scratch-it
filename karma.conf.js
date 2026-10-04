@@ -21,9 +21,7 @@ module.exports = function(config) {
 
     frameworks: ['browserify', 'mocha'],
 
-    // Listed explicitly so karma doesn't auto-load karma-sauce-launcher, which
-    // only karma.conf.ci.js uses and which fails to load without its install
-    // scripts (CI installs with --ignore-scripts).
+    // Listed explicitly so karma never auto-loads a stray karma-* plugin.
     plugins: [
       'karma-browserify',
       'karma-chrome-launcher',

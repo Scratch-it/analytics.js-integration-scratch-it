@@ -1,6 +1,6 @@
 # analytics.js-integration-scratch-it
 
-[![CircleCI](https://circleci.com/gh/Scratch-it/analytics.js-integration-scratch-it.svg?style=svg)](https://circleci.com/gh/Scratch-it/analytics.js-integration-scratch-it)
+[![CI](https://github.com/Scratch-it/analytics.js-integration-scratch-it/actions/workflows/ci.yml/badge.svg)](https://github.com/Scratch-it/analytics.js-integration-scratch-it/actions/workflows/ci.yml)
 
 ## Example
 
