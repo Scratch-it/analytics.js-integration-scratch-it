@@ -25,7 +25,6 @@
   "dependencies": {
     "@ndhoule/after": "^1.0.0",
     "@ndhoule/clone": "^1.0.0",
-    "@ndhoule/defaults": "^2.0.1",
     "@ndhoule/each": "^2.0.1",
     "@ndhoule/every": "^2.0.1",
     "@ndhoule/extend": "^2.0.0",
@@ -51,24 +50,26 @@
     "@segment/analytics.js-core": "^3.0.0",
     "@segment/analytics.js-integration-tester": "^3.0.0",
     "@segment/eslint-config": "^3.1.1",
-    "browserify": "^13.0.0",
-    "browserify-istanbul": "^2.0.0",
+    "browserify": "^17.0.1",
     "eslint": "^2.9.0",
     "eslint-plugin-mocha": "^2.2.0",
     "eslint-plugin-require-path-exists": "^1.1.5",
-    "istanbul": "^0.4.3",
     "karma": "^6.4.4",
     "karma-browserify": "^8.1.0",
     "karma-chrome-launcher": "^3.2.0",
-    "karma-coverage": "^1.0.0",
-    "karma-junit-reporter": "^1.0.0",
-    "karma-mocha": "1.0.1",
-    "karma-sauce-launcher": "^1.0.0",
+    "karma-mocha": "^2.0.1",
     "karma-spec-reporter": "0.0.26",
-    "mocha": "^2.2.5",
+    "mocha": "^10.8.2",
     "proclaim": "^3.4.1",
-    "segmentio-facade": "^3.0.2",
     "sinon": "1.7.3",
-    "watchify": "^3.7.0"
+    "watchify": "^4.0.0"
+  },
+  "overrides": {
+    "shelljs": "^0.8.5",
+    "is-email": "^1.0.2",
+    "serialize-javascript": "^7.0.5",
+    "@segment/analytics.js-core": {
+      "debug": "^2.6.9"
+    }
   }
 }

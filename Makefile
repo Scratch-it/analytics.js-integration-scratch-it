@@ -29,11 +29,7 @@ ifdef BROWSERS
 KARMA_FLAGS += --browsers $(BROWSERS)
 endif
 
-ifdef CI
-KARMA_CONF ?= karma.conf.ci.js
-else
 KARMA_CONF ?= karma.conf.js
-endif
 
 # Mocha flags.
 GREP ?= .

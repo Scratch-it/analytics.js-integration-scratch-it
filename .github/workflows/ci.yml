@@ -12,10 +12,6 @@ name: CI
 # merged pull requests had automated checks, not just ones into master. No
 # path filters either, for the same reason.
 #
-# KARMA_CONF is pinned to karma.conf.js because GitHub sets CI=true, which
-# would otherwise make the Makefile pick karma.conf.ci.js (SauceLabs, needs
-# SAUCE_* secrets this repo does not have).
-#
 # `npm ci --ignore-scripts`: no install scripts are needed to lint or test.
 
 on:
@@ -58,4 +54,4 @@ jobs:
         run: make lint
 
       - name: Run browser unit tests (karma, headless Chrome)
-        run: make test-browser KARMA_CONF=karma.conf.js KARMA_FLAGS="--single-run --browsers ChromeHeadlessCI"
+        run: make test-browser KARMA_FLAGS="--single-run --browsers ChromeHeadlessCI"
